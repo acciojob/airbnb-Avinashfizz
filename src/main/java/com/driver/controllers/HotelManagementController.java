@@ -14,8 +14,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
-
-
 @RestController
 @RequestMapping("/hotel")
 public class HotelManagementController {
