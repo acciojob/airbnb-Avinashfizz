@@ -27,7 +27,7 @@ public class HotelManagementService {
 
     public String getHotelWithMostFacilities() {
 
-        return hotelManagementRepository.getHOtelWithMostFacilities();
+        return hotelManagementRepository.getHotelWithMostFacilities();
 
     }
 
