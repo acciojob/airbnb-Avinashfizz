@@ -9,38 +9,42 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-
-
-
 @Service
 public class HotelManagementService {
 
 
-    HotelMagementRepository hotelManagementRepository =new HotelMagementRepository();
+    HotelManagementRepository hotelManagementRepository = new HotelManagementRepository();
 
-    public String addHotel(Hotel hotel){
-        String ans = hotelManagementRepository.addHotel(hotel);
-        return ans;
+    public String addHotel(Hotel hotel) {
+
+        return hotelManagementRepository.addHotel(hotel);
     }
 
-    public Integer addUser(User user){
-        int ans = hotelManagementRepository.addUser(user);
-        return ans;
+    public Integer addUser(User user) {
+
+        return hotelManagementRepository.addUser(user);
     }
 
-    public String getHotelWithMostFacilities(){
-        return hotelManagementRepository.getHotelWithMostFacilities();
+    public String getHotelWithMostFacilities() {
+
+        return hotelManagementRepository.getHOtelWithMostFacilities();
+
     }
 
-    public int bookARoom(Booking booking){
+    public int bookARoom(Booking booking) {
+
         return hotelManagementRepository.bookARoom(booking);
     }
 
-    public int getBookings(Integer aadharCard){
+    public int getBookings(Integer aadharCard) {
+
         return hotelManagementRepository.getBookings(aadharCard);
+
     }
 
-    public Hotel updateFacilities(List<Facility> newFacilities, String hotelName){
+    public Hotel updateFacilities(List<Facility> newFacilities, String hotelName) {
+
         return hotelManagementRepository.updateFacilities(newFacilities, hotelName);
+
     }
 }
